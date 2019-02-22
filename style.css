@@ -1,12 +1,10 @@
 
 body {
   margin: 0;
-  height: 100%;
+
   font-family: 'Josefin Sans', sans-serif;
 }
-.margin {
-  margin: 40px 120px 40px 120px;
-}
+
 h1,
 h2,
 h3,
@@ -60,7 +58,7 @@ a {
 }
 .intro {
   background-image: url("./ilustracion1.png");
-  background-position: right;
+  background-position: top right;
   background-size: 500px auto;
   background-repeat: no-repeat;
   height: 600px;
@@ -95,19 +93,42 @@ animation-duration: 3s;
 .second {
   display:flex;
 }
-.movil {
-  height: 800px;
-  margin-left: 10%;
+@keyframes movil {
+  from {margin-left: -40vh;}
+  to {margin-left: 0;}
 }
+
+.movil {
+  display: block;
+  height: 700px;
+  margin-left: 10%;
+  animation-name: movil;
+  animation-duration: 3s;
+}
+
 .third {
   display:flex;
   justify-content: space-between;
   margin-top: 60px;
   margin-bottom: 60px;
 }
+@keyframes night {
+  from {
+    margin-left: : 40vw;
+
+}
+  to {
+    margin-left: 1vw;
+
+  }
+}
 .night {
-  height: 400px;
+  overflow: hidden;
+  display: block;
+  height: 500px;
   margin: 0 0 0 auto;
+  animation-name: night;
+  animation-duration: 3s;
 }
 
 .section2 {
@@ -129,9 +150,13 @@ animation-duration: 3s;
   position: relative;
   margin: 200px 10% 0 auto;
 }
+
 .mockup {
-  height: 800px;
+  display: block;
+  height: 700px;
   margin-left: 10%;
+  animation-name: movil;
+  animation-duration: 3s;
 }
 
 .fifth {
@@ -156,8 +181,8 @@ animation-duration: 3s;
 }
 .paragraph {
   padding-top: 100px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 11%;
+  margin-right: 11%;
 }
 .app-store {
   display: block;
@@ -168,6 +193,8 @@ animation-duration: 3s;
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .footer-nav-1 {
@@ -199,11 +226,13 @@ animation-duration: 3s;
   border-radius: 6%;
   width: 180px;
   height: 180px;
-  padding: 80px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .caja-texto {
   display: block;
-  width: 70%;
 }
 p.footer-text {
  font-size: 16px;
@@ -226,12 +255,26 @@ h1.align-center {
   position: relative;
   color: blue;
   background-color: #fff;
-  margin-right: 15px;
+  /* margin-right: 15px; */
   z-index: 1;
+  width: 90%;
 }
 .end {
   background-image: url("./path4.png");
   background-position: left;
   background-size: 90% 100%;
   background-repeat: no-repeat;
+}
+.sub-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 10% 0px 10%;
+  align-items: center;
+}
+.footer-logo {
+  height: 50px;
+  margin-bottom: 20px;
+}
+p.copyright-text {
+  font-size: 10px;
 }
